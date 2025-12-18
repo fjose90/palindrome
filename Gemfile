@@ -15,8 +15,12 @@ group :development do
   gem "rubocop-performance", "~> 1.21", require: false
   gem "rubocop-rspec", "~> 2.27", require: false
   gem "rubocop-shopify", "~> 2.15", require: false
+  gem "rubocop-rake", "~> 0.7.1", require: false
 end
 
 group :test do
   gem "rspec", "~> 3.13"
+  gem "rack-test", "~> 2.2"
+  gem "rake", "~> 13.0"
+  gem "nokogiri", "~> 1.18"
 end
