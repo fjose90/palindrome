@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-RSpec.describe "GET /" do
+RSpec.describe("GET /") do
   before do
     get "/"
   end
 
   it "returns OK" do
-    expect(last_response).to be_ok
+    expect(last_response).to(be_ok)
   end
 
   # it "returns welcome message" do
