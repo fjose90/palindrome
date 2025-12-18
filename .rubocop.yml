@@ -8,3 +8,4 @@ AllCops:
 plugins:
   - rubocop-rspec
   - rubocop-performance
+  - rubocop-rake
