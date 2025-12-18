@@ -1,5 +1,7 @@
-require 'sinatra'
+# frozen_string_literal: true
 
-get '/' do
-  'goodbye, world!'
+require "sinatra"
+
+get "/" do
+  "goodbye, world!"
 end
