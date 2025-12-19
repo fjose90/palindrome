@@ -5,6 +5,7 @@ AllCops:
   TargetRubyVersion: 3.4
   NewCops: enable
 
-require:
+plugins:
   - rubocop-rspec
   - rubocop-performance
+  - rubocop-rake
