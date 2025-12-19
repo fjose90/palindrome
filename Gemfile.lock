@@ -72,12 +72,6 @@ GEM
     rubocop-ast (1.48.0)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
-    rubocop-capybara (2.22.1)
-      lint_roller (~> 1.1)
-      rubocop (~> 1.72, >= 1.72.1)
-    rubocop-factory_bot (2.28.0)
-      lint_roller (~> 1.1)
-      rubocop (~> 1.72, >= 1.72.1)
     rubocop-performance (1.26.1)
       lint_roller (~> 1.1)
       rubocop (>= 1.75.0, < 2.0)
@@ -85,13 +79,9 @@ GEM
     rubocop-rake (0.7.1)
       lint_roller (~> 1.1)
       rubocop (>= 1.72.1)
-    rubocop-rspec (2.31.0)
-      rubocop (~> 1.40)
-      rubocop-capybara (~> 2.17)
-      rubocop-factory_bot (~> 2.22)
-      rubocop-rspec_rails (~> 2.28)
-    rubocop-rspec_rails (2.29.1)
-      rubocop (~> 1.61)
+    rubocop-rspec (3.8.0)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.81)
     rubocop-shopify (2.18.0)
       rubocop (~> 1.62)
     ruby-progressbar (1.13.0)
@@ -112,19 +102,19 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  nokogiri (~> 1.18)
-  puma (~> 6.4)
-  rack-test (~> 2.2)
-  rackup (~> 2.1)
-  rake (~> 13.0)
-  rerun (~> 0.14)
-  rspec (~> 3.13)
-  rubocop (~> 1.60)
-  rubocop-performance (~> 1.21)
-  rubocop-rake (~> 0.7.1)
-  rubocop-rspec (~> 2.27)
-  rubocop-shopify (~> 2.15)
-  sinatra (~> 4.0)
+  nokogiri
+  puma
+  rack-test
+  rackup
+  rake
+  rerun
+  rspec
+  rubocop
+  rubocop-performance
+  rubocop-rake
+  rubocop-rspec
+  rubocop-shopify
+  sinatra
 
 RUBY VERSION
    ruby 3.4.7p58
