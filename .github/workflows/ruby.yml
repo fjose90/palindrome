@@ -31,7 +31,7 @@ jobs:
         with:
           # Versão fixa do Ruby para rodar o RuboCop
           # Normalmente usa-se a versão principal do projeto
-          ruby-version: "3.3"
+          ruby-version: "3.4"
 
           # Instala o Bundler correto, roda bundle install
           # e faz cache das gems automaticamente
@@ -53,7 +53,7 @@ jobs:
     strategy:
       matrix:
         # O job será executado uma vez para cada versão abaixo
-        ruby: ["3.1", "3.2", "3.3"]
+        ruby: ["3.2", "3.3", "3.4"]
 
     # Passos executados nesse job
     steps:
