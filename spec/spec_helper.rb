@@ -6,6 +6,9 @@ require "rspec"
 require "rack/test"
 require_relative "../app"
 
+# Carrega helpers e shared examples
+Dir[File.join(__dir__, "support/**/*.rb")].sort.each { |f| require f }
+
 RSpec.configure do |config|
   config.include(Rack::Test::Methods)
 
