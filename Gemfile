@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-ruby ">= 3.0.0"
+ruby ">= 3.1"
 
 gem "sinatra"
 gem "rackup"
@@ -10,17 +10,18 @@ gem "puma"
 
 group :development do
   gem "rerun"
+end
 
-  gem "rubocop", require: false
+group :development, :test do
+  gem "rubocop", "~> 1.60", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rspec", require: false
-  gem "rubocop-shopify", require: false
   gem "rubocop-rake", require: false
+  gem "rubocop-shopify", require: false
 end
 
 group :test do
   gem "rspec"
   gem "rack-test"
   gem "rake"
-  gem "nokogiri"
 end
