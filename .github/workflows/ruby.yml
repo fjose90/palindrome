@@ -29,7 +29,9 @@ jobs:
 
       # 3. Instala dependências
       - name: Install dependencies
-        run: bundle install
+        run: |
+          bundle config set with 'development test'
+          bundle install --jobs 4 --retry 3
 
       # 4. Roda RuboCop
       - name: Run RuboCop
